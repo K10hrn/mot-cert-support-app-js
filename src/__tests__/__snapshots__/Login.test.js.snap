@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-6 mt-5 mx-auto"
+      >
+        <form
+          novalidate=""
+        >
+          <h1
+            class="h3 mb-3 font-weight-normal"
+          >
+            Please sign in
+          </h1>
+          <div
+            class="form-group"
+          >
+            <label
+              for="email"
+            >
+              Email Address
+            </label>
+            <input
+              class="form-control"
+              data-testid="email"
+              name="email"
+              placeholder="Enter Email"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="form-control"
+              data-testid="password"
+              name="password"
+              placeholder="Enter Password"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            class="btn btn-lg btn-primary btn-block mt-2"
+            data-testid="sign-in"
+            type="button"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
