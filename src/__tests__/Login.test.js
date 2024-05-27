@@ -5,11 +5,11 @@ import { MemoryRouter } from 'react-router-dom';
 import nock from 'nock';
 
 const authMock = nock('http://localhost')
-    .post('/v1/auth/login')
-    .reply(200, {
+    .post('/v1/auth/login', {
         "email": "admin@example.com",
         "password": "password123"
-    });
+    })
+    .reply(200);
 
 describe('Login component', () => {
 
