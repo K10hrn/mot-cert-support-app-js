@@ -23,7 +23,7 @@ jobs:
       - name: E2E checks
         run: |
           npm start &
-          curl --head -X GET --retry 60 --retry-connrefused --retry-delay 1 http://localhost:300010
+          curl --head -X GET --retry 60 --retry-connrefused --retry-delay 1 http://localhost:3000
           npx wdio run ./wdio.conf.js
       - name: Build production artifacts
         run: |
