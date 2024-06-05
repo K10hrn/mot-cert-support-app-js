@@ -15,6 +15,7 @@ describe('My Login application', () => {
 
         const element = await $('.card-title')
         await expect(element).toHaveText('Projects')
+
     });
 
     it('should show projects after creation', async () => {
@@ -34,8 +35,8 @@ describe('My Login application', () => {
 
         await browser.url('http://localhost:3000/#/projects')
 
-        const elements = await $$('.col-8 .list-group-item')
-        expect(elements.length).toBe(2)
+        const projectTableRows = await $('ul[data-testid="project-table"] tr')
+        expect(projectTableRows).toBeElementsArrayOfSize(2);
     });
 
 });
